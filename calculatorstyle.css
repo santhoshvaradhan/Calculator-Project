@@ -1,0 +1,133 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+  }
+  body
+  {
+    background-color: steelblue;
+  }
+  .container
+  {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 440px; */
+    padding: 0 20px;
+    margin: 70px auto;
+    
+  }
+  .calculator
+  {
+    background-color: rgb(78, 78, 78);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 1px rgba(5, 5, 5, 0.1);
+    display: grid;
+    grid-template-columns:repeat(4,68px);
+  }
+  input
+  {
+    grid-column:span 4;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+    padding-right:20px ;
+    font-size: 40px;
+  }
+  button
+  {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    margin: 10px;
+    font-size: 20px;
+    /* font-weight: bold; */
+  }
+  button:hover{
+    background-color: rgb(228, 228, 223);
+  }
+  #equalto
+  {
+    width:120px;
+    background-color: rgb(61 225 125);
+    color: white;
+  }
+  #all-clear
+  {
+    background-color: #f53030;
+    color: white;
+  }
+  #all-clear:hover
+  {
+    background-color: #e62323;
+  }
+  .symbol
+  {
+    background-color: rgb(61 225 125);
+    color: white;
+  }
+  .symbol:hover,#equalto:hover
+  {
+    background-color: rgb(45, 204, 124);
+  }
+   /* Center the loader */
+   #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin: -76px 0 0 -76px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid rgb(78, 78, 78);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    text-align: center;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }

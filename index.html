@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <link rel="stylesheet" href="calculatorstyle.css">
+    <script src="calculator.js"></script>
+  
+</head>
+
+<body onload="myFunction()" >
+    <div id="loader"><i style="font-size: 30px;" class="fa fa-calculator"></i></div>
+    <div class="container animate-bottom" style="display:none;" id="myDiv">
+        <div class="calculator">
+            <input id="output-screen" type="text" placeholder="0">
+            <button id="all-clear" onclick="Clear()">AC</button>
+            <button class="symbol" onclick="Display('/')">/</button>
+            <button class="symbol" onclick="Display('*')">x</button>
+            <button class="symbol" onclick="Del()"><i class="fas fa-backspace"></i></button>
+            <button  onclick="Display('7')">7</button>
+            <button onclick="Display('8')">8</button>
+            <button onclick="Display('9')">9</button>
+            <button class="symbol" onclick="Display('-')">-</button>
+            <button onclick="Display('4')">4</button>
+            <button onclick="Display('5')">5</button>
+            <button onclick="Display('6')">6</button>
+            <button class="symbol" onclick="Display('+')">+</button>
+            <button onclick="Display('1')">1</button>
+            <button onclick="Display('2')">2</button>
+            <button onclick="Display('3')">3</button>
+            <button class="symbol" onclick="Display('%')">%</button>
+            <button onclick="Display('.')">.</button>
+            <button onclick="Display('0')">0</button>
+            <button id="equalto" onclick="Calculate()">=</button>
+        
+        </div>
+    </div>
+    
+</body>
+</html>
